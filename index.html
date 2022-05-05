@@ -1,52 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./Img/icon.png">
     <title>C.R.I.P.T.O.G.R.A.F.E</title>
 </head>
+
 <body>
     <header>
         <img src="./Img/TITULO.png" class="titulo">
         <h1 class="subTitulo">Escreva a sua mensagem abaixo</h1>
     </header>
-    <section>
+
     <form>
-        <textarea class="mensagem" name="mensagem" id="entradaUser" cols="80" rows="5" placeholder="Digite a mensagem"></textarea>
-        
-        <div class="opcoes">
-       
-        <input type="radio" name="opcao"  id="codificar">
-        <label for="">Codificar</label>
+        <textarea class="mensagem" name="mensagem" id="entradaUser" cols="80" rows="5"
+            placeholder="Digite a mensagem"></textarea>
+        <section>
+            <div class="principal">
+                <div class="opcoes">
 
-        <input type="radio" name="opcao" class=code id="decodificar">
-        <label for="">Decodificar</label>
-        </div>
-    
-        <p class="escolha">Escolha a criptografia aqui:</p>
-        <select name="select" id="select">
-            <option value="valor0">Escolha a opção</option>
-            <option value="base">Base64</option>
-            <option value="cifra">Cifra de César</option>
-        </select><br>
+                    <input type="radio" name="opcao" id="codificar">
+                    <label for="">Codificar</label>
 
-        <input class="number" type="number" name="numero" id="numero" min='1' max='26' placeholder="Insira o número"> 
+                    <input type="radio" name="opcao" class=code id="decodificar">
+                    <label for="">Decodificar</label>
+                </div>
+                <div class="secundaria">
+                <p class="escolha">Escolha a criptografia aqui:</p>
+                <select name="select" id="select">
+                    <option value="esc">Escolha a opção</option>
+                    <option value="base">Base64</option>
+                    <option value="cifra">Cifra de César</option>
+                </select><br>
+
+                <input class="number" type="number" name="numero" id="numero" min='1' max='26'
+                    placeholder="Escolha de 1-25">
     </form>
 
     <button id="botao" class="botao" type="submit">
         <h3 id="criptografe">Criptografe</h3>
     </button>
+   </div>
+    <div class="resposta" id="resposta">
 
-        <div class="resposta" id="resposta">
-
-            <textarea class="respostaUser" name="respostaUser" id="respostaUser" cols="72" rows="5" ></textarea>
-        </div>
+        <textarea class="respostaUser" name="respostaUser" id="respostaUser" cols="72" rows="5"></textarea>
+    </div>
+    </div>
+    <div class="image">
+        <img src="./Img/man.png" class="man">
+    </div>
 </section>
     <footer>
-        <p class="textoRodape">Copyright - Sara </p>
+        <!-- <p class="textoRodape">Copyright - Sara </p> -->
     </footer>
     <script src="./codificador.js"></script>
 </body>
+
 </html>

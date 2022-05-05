@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Megrim&family=Montserrat:wght@400;500;600;700&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./Img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.number,
+.resposta {
+    display: none;
+}
+
+
+.textoRodape {
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: 42px;
+    color: rgb(63, 37, 37);
+    margin-left: 575px;
+    margin-top: 10px;
+}
+
+
+.titulo {
+    --cor-neon: #faed27;
+    width: 80%;
+    margin: 10px 110px;
+}
+
+img {
+    animation: neon 10s alternate infinite ease-in-out;
+}
+
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+
+    to {
+        filter: drop-shadow(40px 25px 90px var(--cor-neon))
+    }
+}
+
+h1 {
+    color: rgb(63, 37, 37);
+    text-transform: uppercase;
+    font-family: 'Megrim', cursive;
+    margin-left: 470px;
+    font-size: 24px;
+}
+
+.mensagem {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px rgb(63, 37, 37) solid;
+    margin: 8px 220px;
+    padding: 15px 25px;
+    color: rgb(63, 37, 37);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.opcoes {
+    margin-left: 540px;
+}
+
+label {
+    color: rgb(63, 37, 37);
+    text-transform: uppercase;
+    font-family: 'Megrim', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.code {
+    margin-left: 40px;
+}
+
+#select {
+    margin: 0 0 5px 529px;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px rgb(63, 37, 37) solid;
+}
+
+.escolha {
+    margin: 18px 0px 5px 570px;
+    text-transform: uppercase;
+    font-family: 'Megrim', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(63, 37, 37);
+}
+
+.secundaria {
+    display: flex;
+    flex-direction: column;
+}
+
+.botao {
+    border-radius: 12px;
+    border: 1px rgb(63, 37, 37) solid;
+    background-color: rgb(63, 37, 37);
+    color: rgb(216, 213, 213);
+    font-family: 'Megrim', cursive;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 5px 0 0 530px;
+}
+
+section {
+    display: flex;
+    justify-content: flex-start
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.man {
+    width: 40%;
+
+}
+
+.image {
+    width: 200px;
+    height: 105px;
+
+}
